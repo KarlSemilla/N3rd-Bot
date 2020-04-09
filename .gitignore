@@ -1,2 +1,5 @@
 # Bot-token must not be leaked
 bot-token.json
+
+# Personal Notes
+notes.md
