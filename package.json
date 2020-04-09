@@ -1,0 +1,14 @@
+{
+  "name": "n3rd-bot",
+  "version": "0.0.1",
+  "description": "A bot for Club N3rd that will manage the club's needs!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kim Carlo Santoyo and Karl Anthony Semilla",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.1.1"
+  }
+}
