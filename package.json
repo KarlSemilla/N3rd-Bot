@@ -9,6 +9,7 @@
   "author": "Kim Carlo Santoyo and Karl Anthony Semilla",
   "license": "ISC",
   "dependencies": {
+    "coin-toss": "^0.2.1",
     "discord.js": "^12.1.1"
   }
 }
