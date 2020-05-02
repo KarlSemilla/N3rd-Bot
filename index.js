@@ -4,12 +4,11 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-/*
-    Added a cointoss module from https://www.npmjs.com/package/coin-toss 
-*/
-const coin = require("./handlers/coin-handler");
+const config = require("./config.json");
+const auth = require("./bot-token.json");
 
-const config = require("./bot-token.json");
+//Added a cointoss module from https://www.npmjs.com/package/coin-toss
+const coin = require("./handlers/coin-handler");
 
 /*
     We'll be using Twitch Webhooks when a streamer on the Discord server goes live.
@@ -21,15 +20,15 @@ client.on("ready", () => {
 });
 
 client.on("message", (msg) => {
-  if (msg.content === "!hello") {
+  if (msg.content === `${config.prefix}hello`) {
     msg.reply("Hello!");
   }
 });
 
 client.on("message", (msg) => {
-  if (msg.content === "!flip") {
+  if (msg.content === `${config.prefix}flip`) {
     msg.reply(coin.flip());
   }
 });
 
-client.login(config.token);
+client.login(auth.token);
